@@ -1,4 +1,6 @@
 ## Week 4 - Tidy Data Assigment
+## Suleman Wadur
+## Class: Get and Cleaning Data
 
 ## Load needed libraries
 library(dplyr)
