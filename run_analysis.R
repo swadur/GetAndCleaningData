@@ -81,3 +81,5 @@ names(TidyData) <- gsub("\\(|\\)", "", names(TidyData))
 ##colMeans(TidyData[sapply(TidyData, is.numeric)])
 ##aggregate( TidyData[,3:563], TidyData[,1:2], FUN = mean )
 meanSubjectActivity <- aggregate( . ~ Subjects + ActivityName, data = TidyData, FUN = mean )
+
+write.table(meanSubjectActivity, "./TidyData.txt", row.name=FALSE)
